@@ -1,0 +1,63 @@
+{
+  "name": "jots",
+  "displayName": "Jots",
+  "description": "Daily journaling for developers – track your work, moods, and streaks directly in VSCode.",
+  "version": "1.0.0",
+  "publisher": "jots",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Notebooks"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "journal.newEntry",
+        "title": "Jots: New Entry"
+      },
+      {
+        "command": "journal.setToken",
+        "title": "Jots: Set Token"
+      },
+      {
+        "command": "journal.showSidebar",
+        "title": "Jots: Show Journal Sidebar"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Jots Settings",
+      "properties": {
+        "journal.reminderHour": {
+          "type": "number",
+          "default": 17,
+          "description": "Hour of the day to remind you to journal (0–23)"
+        },
+        "journal.reminderMinute": {
+          "type": "number",
+          "default": 0,
+          "description": "Minute of the hour for the reminder"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "build": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.0.0",
+    "vsce": "2.15.0"
+  },
+  "dependencies": {
+    "jose": "^6.0.12",
+    "node-fetch": "^3.3.2"
+  }
+}

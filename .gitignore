@@ -1,0 +1,33 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Output
+out/
+.vscode-test/
+
+# VSCode project settings
+.vscode/
+
+# TypeScript
+*.tsbuildinfo
+
+# Build configs (optional)
+*.js
+*.js.map
+
+# Secrets
+.env
+*.env
+
+# OS/Editor noise
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+
+# VSCode extension packaging
+.vscodeignore
