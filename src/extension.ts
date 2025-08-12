@@ -125,6 +125,7 @@ export function activate(context: vscode.ExtensionContext) {
 //   return streak;
 // }
 
+// TODO: change view to accomodate extension visiable from extensions sidebar
 function getWebviewContent(entries: JournalEntry[]): string {
   const items = entries
     .filter(entry => extractTextFromLexical(entry.content).trim() !== '')

@@ -9,8 +9,8 @@ Stay consistent with your daily dev journaling right from VSCode.
 - Daily reminders at your preferred time
 
 ## 📸 Preview
-// TODO:
-> _(Insert screenshot here of the status bar + sidebar)_
+![Jots create entry](src/images/jots-create-entry.png)
+![Jots read entries](src/images/jots-read-entries.png)
 
 ## 🛠️ Commands
 
@@ -32,6 +32,8 @@ Use the Command Palette (⇧⌘P / Ctrl+Shift+P):
 Get your personal token from your Jots app, then run `Jots: Set Token` in VSCode to connect.
 
 ## 📦 Installation
-// TODO: insert link once published
-1. Visit the [Marketplace listing](#)
+
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/jots.daily-jots?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=jots.daily-jots)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/jots.daily-jots?label=Downloads)](https://marketplace.visualstudio.com/items?itemName=jots.daily-jots)
+[![Rating](https://img.shields.io/visual-studio-marketplace/r/jots.daily-jots?label=Rating)](https://marketplace.visualstudio.com/items?itemName=jots.daily-jots)
 

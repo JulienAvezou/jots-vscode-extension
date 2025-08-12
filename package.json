@@ -1,14 +1,32 @@
 {
-  "name": "jots",
+  "name": "daily-jots",
   "displayName": "Jots",
-  "description": "Daily journaling for developers – track your work, moods, and streaks directly in VSCode.",
+  "description": "Daily journaling for developers – track your work directly in VSCode.",
   "version": "1.0.0",
   "publisher": "jots",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JulienAvezou/jots-vscode-extension.git"
+  },
+  "icon": "assets/logo.png",
+  "activationEvents": ["*"],
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Notebooks"
+  ],
+  "keywords": [
+    "journal",
+    "notes",
+    "daily",
+    "productivity",
+    "developer",
+    "diary",
+    "logging",
+    "tracking",
+    "tasks",
+    "writing"
   ],
   "main": "./out/extension.js",
   "contributes": {
