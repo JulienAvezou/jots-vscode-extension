@@ -3,6 +3,7 @@
   "displayName": "Jots",
   "description": "Daily journaling for developers – track your work directly in VSCode.",
   "version": "1.0.0",
+  "license": "MIT",
   "publisher": "jots",
   "repository": {
     "type": "git",
