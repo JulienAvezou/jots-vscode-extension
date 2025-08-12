@@ -9,7 +9,7 @@
     "url": "https://github.com/JulienAvezou/jots-vscode-extension.git"
   },
   "icon": "assets/logo.png",
-  "activationEvents": ["*"],
+  "activationEvents": ["onStartupFinished"],
   "engines": {
     "vscode": "^1.85.0"
   },
