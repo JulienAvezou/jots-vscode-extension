@@ -31,3 +31,6 @@ Thumbs.db
 
 # VSCode extension packaging
 .vscodeignore
+
+# Extension packages
+*.vsix
