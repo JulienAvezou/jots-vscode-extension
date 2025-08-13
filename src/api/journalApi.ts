@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import fetch from 'node-fetch';
 import { decodeJwt } from 'jose';
 
 import { wrapTextInLexical } from '../utils/wrapTextInLexical';

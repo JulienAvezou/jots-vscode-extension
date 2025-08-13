@@ -10,7 +10,9 @@
     "url": "https://github.com/JulienAvezou/jots-vscode-extension.git"
   },
   "icon": "assets/logo.png",
-  "activationEvents": ["onStartupFinished"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -63,20 +65,20 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "package": "vsce package",
-    "publish": "vsce publish",
-    "build": "npm run compile"
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "npm run compile && vsce package",
+    "publish": "npm run compile && vsce publish"
   },
   "devDependencies": {
     "@types/vscode": "^1.85.0",
+    "ts-loader": "^9.5.2",
     "typescript": "^5.0.0",
-    "vsce": "2.15.0"
+    "vsce": "2.15.0",
+    "webpack": "^5.101.1",
+    "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "jose": "^6.0.12",
-    "node-fetch": "^3.3.2"
+    "jose": "^6.0.12"
   }
 }
